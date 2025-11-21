@@ -14,7 +14,7 @@ app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024  # 32MB
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # تحميل المودل
-model = joblib.load('model/license_safety_model_v1.pkl')
+model = joblib.load('models/license_safety_model_v1.pkl')
 
 # قاعدة بيانات البدائل الآمنة (أحسن بديل لكل ترخيص خطر)
 SAFE_ALTERNATIVES = {
